@@ -1,16 +1,265 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>my page</title>
-</head>
-<body>
-	<h1 style="color:yellow;"> Heading 1</h1>
-	<h2 style="font-family:verdana;">Heading 2</h2>
-	<p> the first pharagraph i learn about <span style="color: red;">html</span> <strong>ini cetak tebal</strong> dan ini <em>cetak miring</em></p>
+    <head style=" margin: 0; padding: 0;">
+        <title>Page Abdi</title>
+    </head>
+    
+    <body style="  font-family: 'Handlee', cursive;
+        font-size: 13pt;
+        background-color: #efefef;
+        padding: 10px;
+        margin: 0;">
+        <!-- header start -->
+        <div id="header" class="section">
+            <img alt="jafar" class="img-circle" src="C:\Users\Aldi Rizky\Documents\html jafar\gambarsatu.jpg"> 
+            <p>Muhammad Ja'far Shodik</p>
+        </div>
+        <!-- header end -->
+        
+        <!-- About Me section start -->
+        <div class="section">
+            <h1><span>About Me</span></h1>
+            <p>
+                Hallo!! Saya <strong> Ja'far</strong>. Seorang pelajar di SMAKBo. Saya menduduki kelas 11, and I learn <em> HTML</em>. Ini adalah tugas pembelajaran KKPI, belajar membuat <i>web page</i>. <strong>Konten page </strong>ini adalah tentang saya, <u>just about me!</u>
+            </p>
+            <p class="quote">"Bawa manfaat dimanapun anda berada"</p>
+        </div>
+        <!-- About Me section end -->
+        
+        <!-- My Birth Date section start -->
+        <div class="section">
+            <h1><span>My Birth Date</span></h1>
+            <table style="background-color: gray; border: 30px; border-color: gray;">
+                <tr>
+                    <th>Waktu</th>
+                    <th>Hari</th>
+                    <th>Bulan</th>
+                    <th>Tanggal</th>
+                    <th>Tahun</th>
+                </tr>
+                <tr>
+                    <td class="selected">Tengah Malem</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="selected">Kamis</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="selected"> Januari </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="selected">03</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="selected">2000</td>
+                </tr>
+            </table>
+        </div>
+        <!-- My Birth Date section end -->
+        
+        
+        <!-- My Hobby section start -->
+        <div class="section">
+            <h1><span>My Hobby</span></h1>
+            <ul>
+                <li>Menonton Movie <br />
+                    <progress min="0" max="100" value="80"></progress>
+                </li>
+                <li>Badminton <br />
+                    <progress min="0" max="100" value="50"></progress>
+                </li>
+                <li>Bercerita <br />
+                    <progress min="0" max="100" value="30"></progress>
+                </li>
+            </ul>
+        </div>
+        <!-- My Hobby section end -->
+        
+        <!-- Form section start -->
+       <div class="section">
+            <h1><span>Contact Me</span></h1>
+            
+            <svg class="face" height="100" width="100">
+                <circle cx="50" cy="50" r="50" fill="#FDD835"/>
+                <circle cx="30" cy="30" r="10" fill="#FFFFFF"/>
+                <circle cx="70" cy="30" r="10" fill="#FFFFFF"/>
+                <circle cx="30" cy="30" r="5" fill="#000000"/>
+                <circle cx="70" cy="30" r="5" fill="#000000"/>
+                <path d="M 30 70 q 20 20 40 0" stroke="#FFFFFF" stroke-width="5" fill="none" />
+            </svg>
+                 
+            <form>
+                <input name="name" placeholder="Name" type="text" required /><br/>
+                <input name="email" placeholder="Email" type="email" required /><br/>
+                <textarea name="message" placeholder="Message" required ></textarea>
+                <input type="submit" value="SEND" class="submit" />
+            </form>
+        </div>
+        <!-- Form section end -->
+        
 
-	
-	
-	
-	<img src="img/images1.jpeg" alt="ini gambar air terjun" width="500px" height="300px">
-</body>
+       
+<style type="text/css">
+    .section {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.img-circle {
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 30%;
+    height:30%;
+}
+#header {
+    background-image: url("https://www.sololearn.com/Uploads/header.jpg");
+    background-size: cover;
+}
+#header img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+#header p {
+    font-size: 25pt;
+    color: #3b464c;
+    padding-top: 5px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+.quote {
+    font-size: 12pt;
+    text-align: right;
+    margin-top: 10px;
+}
+.selected {
+    background-color: yellow;
+    font-weight: bold;
+    color: white;
+}
+li {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+progress {
+    width: 70%;
+    height: 20px;
+    color: #3fb6b2;
+    background: #efefef;
+}
+progress::-webkit-progress-bar {
+    background: #efefef;
+}
+progress::-webkit-progress-value {
+    background: #3fb6b2;
+} 
+progress::-moz-progress-bar {
+    color: #3fb6b2;
+    background: #efefef;
+}
+iframe, audio {
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #3fb6b2;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #f36f48;
+}
+form {
+    text-align: center;
+    margin-top: 0;
+}
+.submit {
+    background-color: #3fb6b2;
+    padding: 12px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin: 0;
+    font-weight: bold;
+}
+.submit:hover {
+    background-color: #43a09d;
+}
+textarea {
+    height: 100px;
+}
+input, textarea {
+    margin-bottom: 10px;
+    font-size: 11pt;
+    padding: 15px 10px 10px;
+    border: 1px solid #cecece;
+    background-color: #efefef;
+    color: #787575;
+    border-radius: 5px;
+    width: 70%;
+    outline: none;
+}
+.face {
+    transform: scale(0.4);
+    margin: 0 auto;
+    display: block;
+    margin-top: -35px;
+    margin-bottom: -25px;
+}
+#contacts img {
+    height: 50px;
+    width: 50px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+#contacts a {
+    text-decoration: none;
+}
+#contacts img:hover {
+    opacity: 0.8;
+}
+#contacts {
+    text-align: center;
+}
+.copyright {
+    font-size: 8pt;
+    text-align: right;
+    padding-bottom: 10px;
+    color: grey;
+}
+table {
+    width: 100%;
+}
+table, th, td {
+    border: 2px solid #cecece;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+}
+</style>
+        
+    </body>
 </html>
+
